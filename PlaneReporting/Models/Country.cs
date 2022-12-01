@@ -9,6 +9,7 @@ namespace PlaneReporting.Models
     public class Country
     {
         private string countryName;
+        private bool isFromEurope;
 
         public string CountryName
         {
@@ -16,9 +17,16 @@ namespace PlaneReporting.Models
             set { countryName = value; }
         }
 
-        public Country(string countryName)
+        public bool IsFromEurope
+        {
+            get { return isFromEurope; }
+            private set { }
+        }
+
+        public Country(string countryName, bool isFromEurope)
         {
             this.countryName = countryName;
+            this.isFromEurope = isFromEurope;
         }
     }
 }

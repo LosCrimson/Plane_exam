@@ -12,11 +12,11 @@ namespace PlaneReporting
 
 
         public ReportGenerator() { }
-        public ReportGenerator(Aircraftrepo, aircraftModelRepo, companyRepo, countryRepo) { }
+        //public ReportGenerator(Aircraftrepo, aircraftModelRepo, companyRepo, countryRepo) { }
 
-        public List<ReportItem> GenerateReportAircraftInEurope()
-        {
+        //public List<ReportItem> GenerateReportAircraftInEurope()
+        //{
 
-        }
+        //}
     }
 }
