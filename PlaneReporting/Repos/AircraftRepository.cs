@@ -7,7 +7,7 @@ using PlaneReporting.Models;
 
 namespace PlaneReporting
 {
-    public static class AircraftRepository
+    public class AircraftRepository
     {
         public static List<Aircraft> aircrafts = new List<Aircraft>
         {

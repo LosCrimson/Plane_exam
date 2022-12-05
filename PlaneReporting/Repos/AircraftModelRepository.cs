@@ -7,7 +7,7 @@ using PlaneReporting.Models;
 
 namespace PlaneReporting
 {
-    public static class AircraftModelRepository
+    public class AircraftModelRepository
     {
         public static List<AircraftModel> aircraftModels = new List<AircraftModel> 
         {new AircraftModel(1, CompanyRepository.companies.Find(x => x.Id == 1), "XB-29E"),

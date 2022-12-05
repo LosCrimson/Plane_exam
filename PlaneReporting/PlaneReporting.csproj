@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ReportItem.cs" />
     <Compile Include="Repos\AircraftModelRepository.cs" />
     <Compile Include="Repos\AircraftRepository.cs" />
     <Compile Include="Repos\CompanyRepository.cs" />

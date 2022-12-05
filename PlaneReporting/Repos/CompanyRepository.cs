@@ -7,7 +7,7 @@ using PlaneReporting.Models;
 
 namespace PlaneReporting
 {
-    public static class CompanyRepository
+    public class CompanyRepository
     {
         public static List<Company> companies= new List<Company>
         {

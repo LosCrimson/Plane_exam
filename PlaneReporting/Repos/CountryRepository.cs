@@ -7,7 +7,7 @@ using PlaneReporting.Models;
 
 namespace PlaneReporting
 {
-    public static class CountryRepository
+    public class CountryRepository
     {
         public static List<Country> countries = new List<Country>
         {new Country(1, "Spain", true),
