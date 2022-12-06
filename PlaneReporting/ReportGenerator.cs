@@ -13,8 +13,11 @@ namespace PlaneReporting
         public List<ReportItem> GenerateReportAircraftInEurope()
         {
             List<ReportItem> reportList = new List<ReportItem>();
-            
 
+            foreach(AircraftModel aircraftModels in AircraftRepository.aircrafts)
+            {
+                
+            }
             return reportList;
         }
     }

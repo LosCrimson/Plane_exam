@@ -10,13 +10,19 @@ namespace PlaneReporting
     public class CountryRepository
     {
         public static List<Country> countries = new List<Country>
-        {new Country(1, "Spain", true),
+        {
+        new Country(1, "Spain", true),
         new Country(2, "Thailand", false),
         new Country(3, "Sweden", true),
         new Country(4, "Norway", true),
         new Country(5, "USA", false),
         new Country(6, "Japan", false),
         new Country(7, "russia", false),
-        new Country(8, "Ukraine", true),};
+        new Country(8, "Ukraine", true),
+        };
+
+        public List<Country> Retrieve() { return countries; }
+
+        public Country Retrieve(int id) { return countries[id]; }
     }
 }

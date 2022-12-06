@@ -10,7 +10,7 @@ namespace PlaneReporting.Models
     {
         private string companyName;
         private int id;
-        private Country countryId;
+        private int countryId;
 
         public string CompanyName
         {
@@ -24,13 +24,13 @@ namespace PlaneReporting.Models
             private set { }
         }
 
-        public Country CountryId
+        public int CountryId
         {
             get { return countryId; }
             private set { countryId = value; }
         }
 
-        public Company(int id, string companyName, Country countryId)
+        public Company(int id, string companyName, int countryId)
         {
             this.companyName = companyName;
             this.id = id;

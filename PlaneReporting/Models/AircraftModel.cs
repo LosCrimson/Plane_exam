@@ -11,7 +11,7 @@ namespace PlaneReporting.Models
 
         private string model;
         private int id;
-        private Company companyData;
+        private int companyData;
         public string Model
         {
             get { return model; }
@@ -24,13 +24,13 @@ namespace PlaneReporting.Models
             private set { }
         }
 
-        public Company CompanyData
+        public int CompanyData
         {
             get { return companyData; }
             set { companyData = value; }
         }
 
-        public AircraftModel(int id, Company companyData, string model)
+        public AircraftModel(int id, int companyData, string model)
         {
             this.model = model;
             this.id = id;

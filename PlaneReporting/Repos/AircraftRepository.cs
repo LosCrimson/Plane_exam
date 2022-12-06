@@ -11,15 +11,19 @@ namespace PlaneReporting
     {
         public static List<Aircraft> aircrafts = new List<Aircraft>
         {
-            new Aircraft(418, AircraftModelRepository.aircraftModels.Find(x => x.Id == 1), CountryRepository.countries.Find(x => x.Id == 8)),
-            new Aircraft(198, AircraftModelRepository.aircraftModels.Find(x => x.Id == 2), CountryRepository.countries.Find(x => x.Id == 7)),
-            new Aircraft(978, AircraftModelRepository.aircraftModels.Find(x => x.Id == 3), CountryRepository.countries.Find(x => x.Id == 6)),
-            new Aircraft(358, AircraftModelRepository.aircraftModels.Find(x => x.Id == 4), CountryRepository.countries.Find(x => x.Id == 5)),
-            new Aircraft(489, AircraftModelRepository.aircraftModels.Find(x => x.Id == 5), CountryRepository.countries.Find(x => x.Id == 4)),
-            new Aircraft(358, AircraftModelRepository.aircraftModels.Find(x => x.Id == 6), CountryRepository.countries.Find(x => x.Id == 3)),
-            new Aircraft(756, AircraftModelRepository.aircraftModels.Find(x => x.Id == 7), CountryRepository.countries.Find(x => x.Id == 2)),
-            new Aircraft(268, AircraftModelRepository.aircraftModels.Find(x => x.Id == 2), CountryRepository.countries.Find(x => x.Id == 1)),
-            new Aircraft(002, AircraftModelRepository.aircraftModels.Find(x => x.Id == 4), CountryRepository.countries.Find(x => x.Id == 8)),
+            new Aircraft(418, 1, 8),
+            new Aircraft(198, 2, 7),
+            new Aircraft(978, 3, 6),
+            new Aircraft(358, 4, 5),
+            new Aircraft(489, 5, 4),
+            new Aircraft(358, 6, 3),
+            new Aircraft(756, 7, 2),
+            new Aircraft(268, 2, 1),
+            new Aircraft(002, 4, 8),
         };
+
+        public List<Aircraft> Retrieve() { return aircrafts; }
+
+        public Aircraft Retrieve(int id) { return aircrafts[id];}
     }
 }

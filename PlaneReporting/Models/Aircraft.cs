@@ -10,26 +10,26 @@ namespace PlaneReporting.Models
     {
 
         private int id;
-        private AircraftModel aircraftModel;
-        private Country countryWherePlaneRegistered;
+        private int aircraftModel;
+        private int countryWherePlaneRegistered;
         public int Id 
         {
             get { return id; }
             set { id = value; }
         }
 
-        public AircraftModel AircraftModel
+        public int AircraftModel
         {
             get { return aircraftModel; }
             private set { }
         }
-        public Country Country
+        public int Country
         {
             get { return countryWherePlaneRegistered; }
             set { countryWherePlaneRegistered = value; } //Not private because country can change
         }
 
-        public Aircraft(int id, AircraftModel aircraftModel, Country countryWherePlaneRegistered)
+        public Aircraft(int id, int aircraftModel, int countryWherePlaneRegistered)
         {
             this.id = id;
             this.aircraftModel = aircraftModel;
