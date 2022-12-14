@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AircraftModelRepository.cs" />
-    <Compile Include="AircraftRepository.cs" />
-    <Compile Include="CompanyRepository.cs" />
-    <Compile Include="CountryRepository.cs" />
+    <Compile Include="Models\ReportItem.cs" />
+    <Compile Include="Repos\AircraftModelRepository.cs" />
+    <Compile Include="Repos\AircraftRepository.cs" />
+    <Compile Include="Repos\CompanyRepository.cs" />
+    <Compile Include="Repos\CountryRepository.cs" />
     <Compile Include="EmailSender.cs" />
     <Compile Include="HTMLGenerator.cs" />
     <Compile Include="Models\Aircraft.cs" />
@@ -60,5 +61,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

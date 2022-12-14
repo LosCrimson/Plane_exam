@@ -10,13 +10,15 @@ namespace PlaneReporting
     public class ReportGenerator
     {
 
-
-        public ReportGenerator() { }
-        public ReportGenerator(Aircraftrepo, aircraftModelRepo, companyRepo, countryRepo) { }
-
         public List<ReportItem> GenerateReportAircraftInEurope()
         {
+            List<ReportItem> reportList = new List<ReportItem>();
 
+            foreach(AircraftModel aircraftModels in AircraftRepository.aircrafts)
+            {
+                
+            }
+            return reportList;
         }
     }
 }
